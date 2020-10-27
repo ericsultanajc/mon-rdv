@@ -19,6 +19,7 @@ public class Rdv {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dtRdv;
 	private int tarif;
+	private String motif;
 
 	public Long getId() {
 		return id;
@@ -50,6 +51,14 @@ public class Rdv {
 
 	public void setTarif(int tarif) {
 		this.tarif = tarif;
+	}
+
+	public String getMotif() {
+		return motif;
+	}
+
+	public void setMotif(String motif) {
+		this.motif = motif;
 	}
 
 }
